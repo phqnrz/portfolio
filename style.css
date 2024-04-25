@@ -1,0 +1,137 @@
+/* estilos gerais */
+:root {
+  --dark-blue: #35374B;
+  --medium-blue: #3a5361;
+  --light-blue: #50727B;
+  --light-green: #78A083;
+  --bg-color: #FBFADA;
+
+  /* fontes */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+
+/* estilo scroll bar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background-color: var(--medium-blue);
+}
+
+
+/* efeito reveal */
+.topo-site {
+  visibility: hidden;
+}
+
+/* estilo header +  nav */
+header {
+  padding: 5rem 4%;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.idioma {
+  color: var(--medium-blue);
+  font-weight: 400;
+}
+
+.idioma>p:hover {
+  transition: .4s;
+  transform: scale(1.1);
+}
+
+header a {
+  color: var(--medium-blue);
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+  position: relative;
+}
+
+header nav.menu-desktop a:hover {
+  color: var(--dark-blue);
+  transform: scale(1.20);
+}
+
+header nav.menu-desktop li a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: var(--medium-blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s ease-in-out;
+}
+
+header nav.menu-desktop a:hover::after {
+  width: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+}
+
+header nav.menu-desktop ul span {
+  display: inline-block;
+  padding: 0 .75rem;
+  font-size: 1.25rem;
+}
+
+
+/* estilo main > sobre */
+section.topo-site {
+  padding: 5rem 12%;
+}
+
+section.topo-site .txt-topo-site h1 {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-top: 6rem;
+}
+
+.topo-site .txt-topo-site h1 span {
+  color: var(--medium-blue);
+  font-size: 2.75rem;
+  font-weight: 500;
+}
+
+.topo-site .txt-topo-site h3 {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
