@@ -4,7 +4,7 @@
   --medium-blue: #3a5361;
   --light-blue: #50727B;
   --light-green: #78A083;
-  --bg-color: #f7f6e7;
+  --bg-color: #f5f5f2;
 
   /* fontes */
   font-family: "Poppins", sans-serif;
@@ -18,9 +18,19 @@
   box-sizing: border-box;
 }
 
+
+html {
+  height: 500vh;
+}
+
 body {
   background-color: var(--bg-color);
   height: 100vh;
+}
+
+.container {
+  max-width: 100rem;
+  margin: auto;
 }
 
 .flex {
@@ -48,7 +58,18 @@ body {
 
 /* estilo header +  nav */
 header {
+  width: 100%;
   padding: 3rem 4%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: 1s;
+  z-index: 9999;
+}
+
+header.scrolling {
+  background-color: var(--bg-color);
+  padding: 1.5rem 4%;
 }
 
 header>.interface {
@@ -64,7 +85,7 @@ header>.interface {
 
 .idioma>p:hover {
   transition: .4s;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 header a {
@@ -78,10 +99,10 @@ header a {
 header nav.menu-desktop a:hover {
   color: var(--dark-blue);
   transform: scale(1.20);
-  font-weight: 400;
+  font-weight: 500;
 }
 
-header nav.menu-desktop li a::after {
+/* header nav.menu-desktop li a::after {
   content: " ";
   width: 0%;
   height: 2px;
@@ -94,7 +115,7 @@ header nav.menu-desktop li a::after {
 
 header nav.menu-desktop a:hover::after {
   width: 100%;
-}
+} */
 
 header nav ul {
   list-style-type: none;
@@ -115,7 +136,7 @@ header nav.menu-desktop ul span {
 
 /* estilo main > topo-site */
 section.topo-site {
-  padding: 8rem 12% 30rem 12%;
+  padding: 20rem 12% 20rem 12%;
 }
 
 section.topo-site .txt-topo-site h1 {
@@ -144,8 +165,10 @@ section.topo-site .txt-topo-site h1 {
 /* estilo main > sobre */
 section.sobre {
   padding: 10rem 8%;
-  background-color: #50727b7a;
+  background: linear-gradient(to bottom right, #50727b7a, #3a5361);
 }
+
+
 
 section.sobre .flex {
   align-items: center;
@@ -153,15 +176,14 @@ section.sobre .flex {
 }
 
 .img-sobre img {
-  border-radius: 50px;
+  max-width: 85%;
+  border-radius: 120px;
   background-color: var(--medium-blue);
-  padding: 7rem 3rem 4rem 3rem;
   box-shadow: 5px 5px 30px 5px var(--medium-blue);
-  position: relative;
-  animation: flutuar 5s ease-in-out infinite alternate;
+  /* animation: flutuar 5s ease-in-out infinite alternate; */
 }
 
-@keyframes flutuar {
+/* @keyframes flutuar {
 
   0%,
   100% {
@@ -171,12 +193,12 @@ section.sobre .flex {
   50% {
     top: 2.5rem;
   }
-}
+} */
 
 
 
 .sobre .txt-sobre {
-  color: var(--medium-blue);
+  color: var(--bg-color);
 }
 
 .sobre .txt-sobre h2 {
@@ -208,4 +230,13 @@ section.sobre .flex {
   font-size: 1.75rem;
   cursor: pointer;
   margin: 0 0.75rem;
+}
+
+.btn-social button:hover {
+  transform: scale(1.20);
+  transition: 1s;
+}
+
+.btn-social button i {
+  color: var(--medium-blue);
 }

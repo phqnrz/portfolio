@@ -20,3 +20,11 @@ function typeWriter(elemento) {
 
 const nome = document.querySelector(".nome");
 typeWriter(nome);
+
+
+
+//barra de rolagem 
+window.addEventListener("scroll", function () {
+  var header = document.querySelector('#header');
+  header.classList.toggle('scrolling', window.scrollY > 0);
+});
