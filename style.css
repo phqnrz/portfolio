@@ -4,7 +4,7 @@
   --medium-blue: #3a5361;
   --light-blue: #50727B;
   --light-green: #78A083;
-  --bg-color: #f5f5f2;
+  --bg-color: #fff;
 
   /* fontes */
   font-family: "Poppins", sans-serif;
@@ -239,4 +239,53 @@ section.sobre .flex {
 
 .btn-social button i {
   color: var(--medium-blue);
+}
+
+
+/* estilo main > habilidades */
+section.habilidades {
+  padding: 10rem 8%;
+}
+
+section.habilidades .flex {
+  flex-direction: column;
+}
+
+section.habilidades .titulo {
+  font-weight: 500;
+  color: var(--medium-blue);
+  text-align: center;
+}
+
+section.habilidades h2 {
+  font-size: 3.25rem;
+  margin-bottom: 1rem;
+}
+
+section.habilidades h3 {
+  font-size: 1.75rem;
+  margin: 2.75rem 0 1rem 0;
+}
+
+.skills {
+  gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills i {
+  font-size: 4em;
+}
+
+.skills p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills small {
+  color: var(--grey);
+  font-size: .8em;
 }

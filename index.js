@@ -7,6 +7,12 @@ revelar.reveal(".efeito-txt-topo", {
   distance: '8rem'
 });
 
+// revelar.reveal(".efeito-sobre", {
+//   duration: 1200, // sempre colocar segundos * 1000
+//   distance: '8rem'
+// });
+
+
 
 // efeito máquina de escrever
 function typeWriter(elemento) {
