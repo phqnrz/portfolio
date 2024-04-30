@@ -382,70 +382,44 @@ section.projetos .titulo {
 
 
 /* efeito main > contato */
-section.formulario {
-  padding: 8rem 4%;
+section.contato {
+  padding: 12rem 8%;
+}
+
+section.contato .titulo {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4.5rem;
+  font-weight: 500;
+  color: var(--medium-blue);
 }
 
 form {
-  max-width: 500px;
+  max-width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 2.5rem;
+  gap: 2rem;
 }
 
-form input {
-  width: 100%;
-  background-color: #242424;
+.topo-form {}
+
+.topo-form input {
+  width: 30rem;
   border: none;
-  outline: 0;
-  padding: 1.25rem 1rem;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 1.25rem;
+  border-bottom: 1px solid #3a5361;
+  padding: 0.75rem;
 }
 
-/* 
-  ESTILIZAR PLACEHOLDER
-form input::placeholder {
-  color: #000;
-} */
-
-form input,
-form textarea {
-  width: 100%;
-  background-color: #242424;
-  border: none;
-  outline: 0;
-  padding: 1.25rem 1rem;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 1.25rem;
+.topo-form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--dark-blue);
 }
 
-form textarea {
-  resize: none;
-  height: 200px;
-}
+input::placeholder {
+  color: var(--medium-blue);
 
-form .btn-enviar {
-  margin-top: 1.25rem;
-  text-align: center;
-}
+  font-size: 14px;
 
-form .btn-enviar input[type=submit] {
-  width: 10rem;
-  background-color: #00FF08;
-  color: #000;
-  font-weight: 700;
-  cursor: pointer;
-  transition: .4s;
-}
-
-button:hover,
-form .btn-enviar input:hover {
-  box-shadow: 1px 1px 8px #00ff085d;
-  transform: scale(1.08);
 }

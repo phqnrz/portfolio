@@ -171,13 +171,16 @@
 
     <section class="contato" id="contato">
       <div class="interface">
-        <h2 class="titulo efeito-contaot">Entre em contato</h2>
+        <h2 class="titulo efeito-contato">Entre em contato</h2>
         <div class="flex">
           <form action="#">
-            <input type="text" placeholder="Seu nome completo:" required class="nome">
-            <input type="email" placeholder="Seu e-mail:" required class="email">
-            <input type="tel" placeholder="Seu telefone:" class="telefone">
-            <textarea placeholder="Sua mensagem:" required class="mensagem"></textarea>
+            <div class="topo-form">
+              <input type="text" placeholder="nome" required class="nome">
+              <input type="text" placeholder="sobrenome" required class="sobrenome">
+              <input type="email" placeholder="email" required class="email">
+              <input type="tel" placeholder="telefone" class="telefone">
+            </div>
+            <textarea placeholder="mensagem" required class="mensagem"></textarea>
             <div class="btn-enviar btn-form">
               <input type="submit" value="Enviar">
             </div>
