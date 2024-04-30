@@ -25,7 +25,8 @@
   <!-- SCROLL REVEAL -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
-  <title>portfólio — phqnrz</title>
+  <link rel="icon" type="img/icon" href="images/ico.ico">
+  <title>phqnrz — portfólio</title>
 </head>
 
 <body>
@@ -41,8 +42,9 @@
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
-          <span><a href="https://github.com/phqnrz" target="_blank"><i class="bi bi-github"></i></a></span>
-          <span><a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><i class="bi bi-linkedin"></i></a></span>
+          <span><a href="https://github.com/phqnrz" target="_blank"><i class="bi bi-github github"></i></a></span>
+          <span><a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><i
+                class="bi bi-linkedin linkedin"></i></a></span>
         </ul>
       </nav> <!-- menu-desktop -->
     </div> <!-- interface -->
@@ -62,13 +64,13 @@
       </div> <!-- interface -->
     </section> <!-- topo-site -->
 
-    <section class="sobre efeito-sobre" id="sobre">
+    <section class="sobre" id="sobre">
       <div class="interface container">
         <div class="flex">
           <div class="img-sobre">
             <img src="images/coding-bro.png" alt="imagem teste">
           </div>
-          <div class="txt-sobre">
+          <div class="txt-sobre efeito-sobre">
             <h2>MUITO PRAZER, <span>SOU PAULO HENRIQUE.</span></h2>
             <p>Atualmente sou estudante do Bacharelado em Tecnologia da Informação pela Universidade Federal do Rio
               Grande do Norte. Ao perceber o meu interesse desde cedo por tecnologia, encontrei no desenvolvimento web,
@@ -82,8 +84,9 @@
               consectetur, voluptate quam eum laudantium vero in? Ducimus quasi expedita iusto repudiandae, sequi veniam
               quam cumque distinctio.</p>
             <div class="btn-social">
-              <a href="https://github.com/phqnrz" target="_blank"><button><i class="bi bi-github"></i></i></button></a>
-              <a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><button><i
+              <a href="https://github.com/phqnrz" target="_blank"><button class="github"><i
+                    class="bi bi-github"></i></i></button></a>
+              <a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><button class="linkedin"><i
                     class="bi bi-linkedin"></i></button></a>
             </div> <!-- btn-social -->
           </div> <!-- sobre-mim -->
@@ -95,52 +98,52 @@
       <div class="interface container">
         <div class="flex">
           <div class="fortes">
-            <h2 class="titulo">Habilidades</h2>
+            <h2 class="titulo efeito-habilidades">Habilidades</h2>
             <div class="skills">
               <p title="HTML5">
-                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-html5-plain colored html"></i>
                 <small>HTML5</small>
               </p>
               <p title="CSS3">
-                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-css3-plain colored css"></i>
                 <small>CSS3</small>
               </p>
               <p title="Bulma">
-                <i class="devicon-bulma-plain colored"></i>
+                <i class="devicon-bulma-plain colored bulma"></i>
                 <small>Bulma</small>
               </p>
               <p title="Bootstrap">
-                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-bootstrap-plain colored bootstrap"></i>
                 <small>Bootstrap</small>
               </p>
               <p title="JavaScript">
-                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-javascript-plain colored javascript"></i>
                 <small>JavaScript</small>
               </p>
             </div> <!-- skills-->
           </div> <!-- fortes -->
 
           <div class="desenvolvimento">
-            <h3 class="titulo">Em desenvolvimento</h3>
+            <h3 class="titulo efeito-habilidades">Em desenvolvimento</h3>
             <div class="skills">
               <p title="Typescript">
-                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-typescript-plain colored typescript"></i>
                 <small>Typescript</small>
               </p>
               <p title="React">
-                <i class="devicon-react-original colored"></i>
+                <i class="devicon-react-original colored react"></i>
                 <small>React</small>
               </p>
               <p title="Node.js">
-                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-nodejs-plain colored node"></i>
                 <small>Node.js</small>
               </p>
               <p title="Java">
-                <i class="devicon-java-plain colored"></i>
+                <i class="devicon-java-plain colored java"></i>
                 <small>Java</small>
               </p>
               <p title="MongoDB">
-                <i class="devicon-mongodb-plain colored"></i>
+                <i class="devicon-mongodb-plain colored mongodb"></i>
                 <small>MongoDB</small>
               </p>
             </div> <!-- skills -->
@@ -148,6 +151,40 @@
         </div> <!-- flex -->
       </div> <!-- interface -->
     </section> <!-- habilidades -->
+
+    <section class="projetos" id="projetos">
+      <div class="interface">
+        <h2 class="titulo efeito-projetos">Projetos</h2>
+        <div class="flex">
+          <div class="img-port port1" style="background-image: url(images/github.jpeg);">
+            <div class="overlay">Projeto 1</div>
+          </div>
+          <div class="img-port port2" style="background-image: url(images/github.jpeg);">
+            <div class="overlay">Projeto 2</div>
+          </div>
+          <div class="img-port port3" style="background-image: url(images/github.jpeg);">
+            <div class="overlay">Projeto 3</div>
+          </div>
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- portfolio  -->
+
+    <section class="contato" id="contato">
+      <div class="interface">
+        <h2 class="titulo efeito-contaot">Entre em contato</h2>
+        <div class="flex">
+          <form action="#">
+            <input type="text" placeholder="Seu nome completo:" required class="nome">
+            <input type="email" placeholder="Seu e-mail:" required class="email">
+            <input type="tel" placeholder="Seu telefone:" class="telefone">
+            <textarea placeholder="Sua mensagem:" required class="mensagem"></textarea>
+            <div class="btn-enviar btn-form">
+              <input type="submit" value="Enviar">
+            </div>
+          </form>
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- contato -->
   </main>
 </body>
 
