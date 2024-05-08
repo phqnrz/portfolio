@@ -387,39 +387,44 @@ section.contato {
 }
 
 section.contato .titulo {
-  font-size: 4rem;
   text-align: center;
-  margin-bottom: 4.5rem;
-  font-weight: 500;
+  margin-bottom: 0.75rem;
   color: var(--medium-blue);
 }
 
-form {
-  max-width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 2rem;
+section.contato h2 {
+  font-size: 4rem;
+  font-weight: 500;
 }
 
-.topo-form {}
+section.contato h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+form {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* gap: 3rem; */
+}
 
 .topo-form input {
   width: 30rem;
   border: none;
   border-bottom: 1px solid #3a5361;
-  padding: 0.75rem;
+  display: flex;
+  padding: 2.25rem 0 0.3rem 0.1rem;
 }
 
 .topo-form input:focus {
   outline: none;
-  border-bottom: 2px solid var(--dark-blue);
+  border-bottom: 2px solid var(--medium-blue);
 }
 
 input::placeholder {
   color: var(--medium-blue);
-
   font-size: 14px;
-
 }
