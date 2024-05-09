@@ -1,0 +1,76 @@
+/* estilo header +  nav */
+header {
+  width: 100%;
+  padding: 2.5rem 4%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: 1s;
+  z-index: 9999;
+}
+
+header.scrolling {
+  background-color: var(--bg-color);
+  padding: 1.5rem 4%;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.idioma {
+  color: var(--medium-blue);
+  font-weight: 400;
+}
+
+.idioma>p:hover {
+  transition: .4s;
+  transform: scale(1.1);
+}
+
+header a {
+  color: var(--medium-blue);
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+  position: relative;
+}
+
+header nav.menu-desktop a:hover {
+  color: var(--dark-blue);
+  transform: scale(1.20);
+  font-weight: 500;
+}
+
+/* header nav.menu-desktop li a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: var(--medium-blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s ease-in-out;
+}
+
+header nav.menu-desktop a:hover::after {
+  width: 100%;
+} */
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1rem;
+}
+
+header nav.menu-desktop ul span {
+  display: inline-block;
+  padding: 0 .75rem;
+  font-size: 1.5rem;
+}

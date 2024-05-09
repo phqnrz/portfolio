@@ -1,0 +1,44 @@
+/* estilos gerais */
+:root {
+  --dark-blue: #35374B;
+  --medium-blue: #3a5361;
+  --light-blue: #50727B;
+  --light-green: #78A083;
+  --bg-color: #fff;
+
+  /* fontes */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+
+/* estilo scroll bar */
+::-webkit-scrollbar {
+  width: 0.75rem;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background-color: var(--medium-blue);
+}

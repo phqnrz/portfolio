@@ -1,3 +1,10 @@
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
 // funcionalidade de revelar os atributos da página
 window.revelar = ScrollReveal({ reset: true });
 

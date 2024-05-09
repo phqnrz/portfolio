@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +21,16 @@
   <!-- DEVICONS -->
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-  <!-- STYLE CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- STYLES CSS -->
+  <!-- <link rel="stylesheet" href="styles/style.css"> -->
+  <link rel="stylesheet" href="styles/general.css"> <!-- CSS geral -->
+  <link rel="stylesheet" href="styles/header.css"> <!-- CSS header + nav -->
+  <link rel="stylesheet" href="styles/sections.css"> <!-- CSS sections -->
+  <link rel="stylesheet" href="styles/footer.css"> <!-- CSS footer -->
+  <link rel="stylesheet" href="styles/responsive.css"> <!-- CSS responsivo -->
 
   <!-- SCRIPT JS -->
-  <script src="index.js" defer></script>
+  <script src="scripts/index.js" defer></script>
 
   <!-- SCROLL REVEAL -->
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -31,10 +41,7 @@
 
 <body>
   <header id="header">
-    <div class="interface container">
-      <div class="idioma">
-        <p>idioma pt | en</p>
-      </div> <!-- idioma -->
+    <div class="container">
       <nav class="menu-desktop">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -47,162 +54,10 @@
                 class="bi bi-linkedin linkedin"></i></a></span>
         </ul>
       </nav> <!-- menu-desktop -->
-    </div> <!-- interface -->
+    </div> <!-- container -->
   </header>
 
-  <main>
-    <section class="topo-site efeito-txt-topo">
-      <div class="interface container">
-        <div class="flex">
-          <div class="txt-topo-site">
-            <h1>Olá, sou <span class="nome">Paulo Henrique</span></h1>
-            <h3>29 anos, desenvolvedor front-end e</h3>
-            <h3>estudante de tecnologia da informação<span>.</span></h3>
-            </p>
-          </div> <!-- txt-topo-site -->
-        </div> <!-- flex -->
-      </div> <!-- interface -->
-    </section> <!-- topo-site -->
 
-    <section class="sobre" id="sobre">
-      <div class="interface container">
-        <div class="flex">
-          <div class="img-sobre">
-            <img src="images/coding-bro.png" alt="imagem teste">
-          </div>
-          <div class="txt-sobre efeito-sobre">
-            <h2>MUITO PRAZER, <span>SOU PAULO HENRIQUE.</span></h2>
-            <p>Atualmente sou estudante do Bacharelado em Tecnologia da Informação pela Universidade Federal do Rio
-              Grande do Norte. Ao perceber o meu interesse desde cedo por tecnologia, encontrei no desenvolvimento web,
-              mais precisamente em front-end, a possibilidade de experimentar e criar diversas páginas dinâmicas como
-              forma de expressar
-              minha arte.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi temporibus aperiam mollitia ab
-              optio expedita dolorem minus adipisci odit, praesentium consectetur, esse vitae perspiciatis dignissimos
-              cumque maiores nostrum omnis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem ipsa velit temporibus
-              consectetur, voluptate quam eum laudantium vero in? Ducimus quasi expedita iusto repudiandae, sequi veniam
-              quam cumque distinctio.</p>
-            <div class="btn-social">
-              <a href="https://github.com/phqnrz" target="_blank"><button class="github"><i
-                    class="bi bi-github"></i></i></button></a>
-              <a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><button class="linkedin"><i
-                    class="bi bi-linkedin"></i></button></a>
-            </div> <!-- btn-social -->
-          </div> <!-- sobre-mim -->
-        </div> <!-- flex -->
-      </div> <!-- interface -->
-    </section> <!-- sobre -->
-
-    <section class="habilidades" id="habilidades">
-      <div class="interface container">
-        <div class="flex">
-          <div class="fortes">
-            <h2 class="titulo efeito-habilidades">Habilidades</h2>
-            <div class="skills">
-              <p title="HTML5">
-                <i class="devicon-html5-plain colored html"></i>
-                <small>HTML5</small>
-              </p>
-              <p title="CSS3">
-                <i class="devicon-css3-plain colored css"></i>
-                <small>CSS3</small>
-              </p>
-              <p title="Bulma">
-                <i class="devicon-bulma-plain colored bulma"></i>
-                <small>Bulma</small>
-              </p>
-              <p title="Bootstrap">
-                <i class="devicon-bootstrap-plain colored bootstrap"></i>
-                <small>Bootstrap</small>
-              </p>
-              <p title="JavaScript">
-                <i class="devicon-javascript-plain colored javascript"></i>
-                <small>JavaScript</small>
-              </p>
-            </div> <!-- skills-->
-          </div> <!-- fortes -->
-
-          <div class="desenvolvimento">
-            <h3 class="titulo efeito-habilidades">Em desenvolvimento</h3>
-            <div class="skills">
-              <p title="Typescript">
-                <i class="devicon-typescript-plain colored typescript"></i>
-                <small>Typescript</small>
-              </p>
-              <p title="React">
-                <i class="devicon-react-original colored react"></i>
-                <small>React</small>
-              </p>
-              <p title="Node.js">
-                <i class="devicon-nodejs-plain colored node"></i>
-                <small>Node.js</small>
-              </p>
-              <p title="Java">
-                <i class="devicon-java-plain colored java"></i>
-                <small>Java</small>
-              </p>
-              <p title="MongoDB">
-                <i class="devicon-mongodb-plain colored mongodb"></i>
-                <small>MongoDB</small>
-              </p>
-            </div> <!-- skills -->
-          </div> <!-- desenvolvimento -->
-        </div> <!-- flex -->
-      </div> <!-- interface -->
-    </section> <!-- habilidades -->
-
-    <section class="projetos" id="projetos">
-      <div class="interface">
-        <h2 class="titulo efeito-projetos">Projetos</h2>
-        <div class="flex">
-          <div class="img-port port1" style="background-image: url(images/github.jpeg);">
-            <div class="overlay">Projeto 1</div>
-          </div>
-          <div class="img-port port2" style="background-image: url(images/github.jpeg);">
-            <div class="overlay">Projeto 2</div>
-          </div>
-          <div class="img-port port3" style="background-image: url(images/github.jpeg);">
-            <div class="overlay">Projeto 3</div>
-          </div>
-        </div> <!-- flex -->
-      </div> <!-- interface -->
-    </section> <!-- portfolio  -->
-
-    <section class="contato" id="contato">
-      <div class="interface">
-        <h2 class="titulo efeito-contato">Entre em contato</h2>
-        <!-- <div class="flex"> -->
-        <h3 class="titulo">Gostou do conteúdo? Envie uma mensagem, vamos conversar!</h3>
-        <form action="#">
-          <div class="topo-form">
-            <input type="text" placeholder="Nome completo" class="nome forms" required>
-            <!-- <input type="text" placeholder="Sobrenome" required class="sobrenome"> -->
-            <input type="email" placeholder="Email" required class="email forms">
-            <input type="tel" placeholder="Telefone" class="telefone forms">
-          </div>
-          <textarea placeholder="Mensagem" class="mensagem forms" required></textarea>
-          <div class="btn-enviar btn-form">
-            <input type="submit" value="ENVIAR">
-          </div>
-        </form>
-        <!-- </div> flex -->
-      </div> <!-- interface -->
-    </section> <!-- contato -->
-
-    <footer>
-      <div class="interface">
-        <div class="line-footer">
-          <div class="flex">
-          </div> <!-- flex -->
-        </div><!-- line-footer -->
-        <div class="line-footer border">
-          <p>Feito com <i class="bi bi-heart-fill"></i> por <a href="https://github.com/phqnr">Paulo Henrique</a></p>
-          <p>&copy; Todos os direitos reservados</p>
-        </div> <!-- line-footer -->
-      </div> <!-- interface -->
-    </footer> <!-- footer -->
-  </main>
 </body>
 
 </html>
