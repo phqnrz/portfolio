@@ -24,10 +24,12 @@
   <!-- STYLES CSS -->
   <!-- <link rel="stylesheet" href="styles/style.css"> -->
   <link rel="stylesheet" href="styles/general.css"> <!-- CSS geral -->
+  <link rel="stylesheet" href="styles/theme.css"> <!-- CSS p/ alterar cor da página -->
   <link rel="stylesheet" href="styles/header.css"> <!-- CSS header + nav -->
   <link rel="stylesheet" href="styles/sections.css"> <!-- CSS sections -->
   <link rel="stylesheet" href="styles/footer.css"> <!-- CSS footer -->
   <link rel="stylesheet" href="styles/responsive.css"> <!-- CSS responsivo -->
+  <link rel="stylesheet" href="styles/menu-mobile.css"> <!-- CSS menu mobile -->
 
   <!-- SCRIPT JS -->
   <script src="scripts/index.js" defer></script>
@@ -41,21 +43,105 @@
 
 <body>
   <header id="header">
-    <div class="container">
+    <div class="container interface">
+      <div> <!-- slider para trocar cor do tema -->
+        <input type="checkbox" class="checkbox-theme" id="theme">
+        <label class="label-theme" for="theme" form="theme">
+          <i class="bi bi-moon-fill"></i>
+          <i class="bi bi-brightness-high-fill"></i>
+          <div class="slider"></div>
+        </label>
+      </div> <!-- checkbox__theme -->
+
       <nav class="menu-desktop">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="#sobre">Sobre</a></li> <!-- escrever sobre + tecnologias + formação-->
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
-          <span><a href="https://github.com/phqnrz" target="_blank"><i class="bi bi-github github"></i></a></span>
+          <span><a href="https://github.com/phqnr" target="_blank"><i class="bi bi-github github"></i></a></span>
           <span><a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><i
                 class="bi bi-linkedin linkedin"></i></a></span>
         </ul>
       </nav> <!-- menu-desktop -->
-    </div> <!-- container -->
+
+      <!-- btn-abrir-menu mobile -->
+      <!-- <div class="btn-abrir-menu" id="btn-menu"> 
+        <i class="bi bi-list"></i>
+      </div>  -->
+
+      <div class="menu-mobile" id="menu-mobile"> <!-- menu-mobile -->
+        <div class="btn-fechar" id="btn-fechar"> <!-- botão de fechar menu-mobile -->
+          <i class="bi bi-x-lg"></i>
+        </div>
+
+        <nav> <!-- nav do menu-mobile -->
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li> <!-- escrever sobre + tecnologias + formação-->
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <span><a href="https://github.com/phqnr" target="_blank"><i class="bi bi-github github"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><i
+                  class="bi bi-linkedin linkedin"></i></a></span>
+          </ul>
+        </nav>
+      </div> <!-- menu-mobile -->
+
+      <div class="overlay-menu" id="overlay-menu"></div> <!-- overlay-menu -->
+    </div> <!-- container / interface-->
   </header>
+
+  <main>
+    <section class="topo-site efeito-txt-topo">
+      <div class="container interface">
+        <div class="flex">
+          <div class="txt-topo-site">
+            <h1>Olá, sou <span class="meuNome">Paulo Henrique</span></h1>
+            <h3>29 anos, desenvolvedor front-end e</h3>
+            <h3>estudante de tecnologia da informação<span>.</span></h3>
+            </p>
+          </div> <!-- txt-topo-site -->
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- topo-site -->
+
+    <section class="sobre" id="sobre">
+      <div class="interface container">
+        <div class="flex">
+          <!-- <div class="img-sobre">
+            <img src="images/coding-bro.png" alt="imagem teste">
+          </div> -->
+          <div class="txt-sobre efeito-sobre">
+            <h2>Sobre mim</h2>
+            <p>Sou Paulo Henrique, desenvolvedor web front-end e atualmente sou estudante do Bacharelado em Tecnologia
+              da Informação pela Universidade Federal do Rio Grande do Norte.
+            </p>
+            <p>Ao perceber o meu interesse desde cedo por tecnologia, encontrei na
+              programação a possibilidade de desenvolver funcionalidades que ajudem as pessoas no seu dia a dia.</p>
+            </p>
+            <p></p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem ipsa velit
+              temporibus
+              consectetur, voluptate quam eum laudantium vero in? Ducimus quasi expedita iusto repudiandae,
+              sequi veniam
+              quam cumque distinctio.</p>
+            <div class="btn-social">
+              <a href="https://github.com/phqnr" target="_blank"><span class="github"><i
+                    class="bi bi-github"></i></i></span></a>
+              <a href="https://www.linkedin.com/in/phqnrz/" target="_blank"><span class="linkedin"><i
+                    class="bi bi-linkedin"></i></span></a>
+            </div> <!-- btn-social -->
+          </div> <!-- sobre-mim -->
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- sobre -->
+
+
+  </main>
 
 
 </body>

@@ -1,10 +1,10 @@
 /* estilos gerais */
 :root {
-  --dark-blue: #35374B;
+  --dark-blue: #232c35;
   --medium-blue: #3a5361;
   --light-blue: #50727B;
   --light-green: #78A083;
-  --bg-color: #fff;
+  --bg-color: #fafafa;
 
   /* fontes */
   font-family: "Poppins", sans-serif;
@@ -25,10 +25,16 @@ html {
 body {
   background-color: var(--bg-color);
   height: 100vh;
+  transition: background 0.2s linear;
 }
 
 .flex {
   display: flex;
+}
+
+.interface {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 

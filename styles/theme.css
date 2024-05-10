@@ -1,0 +1,49 @@
+/* estilo controle de tema (escuro-claro) */
+body.dark-theme {
+  background-color: #232c35;
+}
+
+.checkbox-theme {
+  opacity: 0;
+  position: absolute;
+}
+
+.label-theme {
+  background-color: var(--medium-blue);
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+  position: relative;
+  height: 16px;
+  width: 38px;
+
+  transform: scale(1.5);
+}
+
+.label-theme .slider {
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  height: 14px;
+  width: 14px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox-theme:checked+.label-theme .slider {
+  transform: translateX(20px);
+}
+
+.bi-moon-fill,
+.bi-brightness-high-fill {
+  color: var(--bg-color);
+  font-size: 10px;
+}

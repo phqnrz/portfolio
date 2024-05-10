@@ -11,7 +11,7 @@ header {
 
 header.scrolling {
   background-color: var(--bg-color);
-  padding: 1.5rem 4%;
+  padding: 1rem 4%;
 }
 
 header>.interface {
@@ -20,18 +20,9 @@ header>.interface {
   justify-content: space-between;
 }
 
-.idioma {
-  color: var(--medium-blue);
-  font-weight: 400;
-}
-
-.idioma>p:hover {
-  transition: .4s;
-  transform: scale(1.1);
-}
-
 header a {
   color: var(--medium-blue);
+  font-weight: 400;
   text-decoration: none;
   display: inline-block;
   transition: .2s;
@@ -40,14 +31,15 @@ header a {
 
 header nav.menu-desktop a:hover {
   color: var(--dark-blue);
-  transform: scale(1.20);
+  transform: scale(1.25);
   font-weight: 500;
+  text-decoration: none;
 }
 
 /* header nav.menu-desktop li a::after {
   content: " ";
   width: 0%;
-  height: 2px;
+  height: 1px;
   background-color: var(--medium-blue);
   position: absolute;
   bottom: 0;
@@ -73,4 +65,87 @@ header nav.menu-desktop ul span {
   display: inline-block;
   padding: 0 .75rem;
   font-size: 1.5rem;
+}
+
+
+/* estilo main > topo-site */
+section.topo-site {
+  padding: 18.5rem 12% 15rem 12%;
+}
+
+section.topo-site .txt-topo-site h1 {
+  color: var(--medium-blue);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 0.75rem;
+}
+
+.topo-site .txt-topo-site h1 span {
+  color: var(--medium-blue);
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.topo-site .txt-topo-site h3 {
+  color: var(--light-blue);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2rem;
+  text-align: center;
+}
+
+
+/* estilo main > sobre */
+section.sobre {
+  padding: 12rem 12%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 5rem;
+}
+
+.img-sobre img {
+  max-width: 85%;
+  border-radius: 120px;
+  background-color: var(--medium-blue);
+  box-shadow: 5px 5px 30px 5px var(--medium-blue);
+}
+
+.sobre .txt-sobre {
+  color: var(--medium-blue);
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 3.25rem;
+  line-height: 3.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sobre .txt-sobre h2 span {
+  color: var(--light-blue);
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: justify;
+
+  margin-bottom: 1rem;
+}
+
+.btn-social span {
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: var(--medium-blue);
+  padding-right: 0.75rem;
+}
+
+.btn-social:hover {
+  transform: scale(1.20);
+  transition: 1s;
 }
