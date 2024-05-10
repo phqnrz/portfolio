@@ -138,14 +138,14 @@ section.sobre .flex {
   margin-bottom: 1rem;
 }
 
-.btn-social span {
+.btn-social a {
   font-size: 1.75rem;
   cursor: pointer;
   color: var(--medium-blue);
   padding-right: 0.75rem;
 }
 
-.btn-social:hover {
+.btn-social a:hover {
   transform: scale(1.20);
   transition: 1s;
 }
