@@ -351,10 +351,9 @@ form .btn-enviar input[type=submit] {
   border: none;
   font-weight: 500;
   cursor: pointer;
-  transition: 1s;
+  transition: .1s;
 }
 
-button:hover,
 form .btn-enviar input:hover {
   border-radius: 30px;
   background-color: var(--medium-blue);
