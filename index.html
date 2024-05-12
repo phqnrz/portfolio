@@ -94,7 +94,7 @@
     </div> <!-- container / interface-->
   </header>
 
-  <main>
+  <main class="container">
     <section class="topo-site efeito-txt-topo">
       <div class="container interface">
         <div class="flex">
@@ -111,9 +111,6 @@
     <section class="sobre" id="sobre">
       <div class="interface container">
         <div class="flex">
-          <!-- <div class="img-sobre">
-            <img src="images/coding-bro.png" alt="imagem teste">
-          </div> -->
           <div class="txt-sobre efeito-sobre">
             <h2>Sobre mim</h2>
             <p>Sou Paulo Henrique, desenvolvedor web front-end e estudante do Bacharelado em Tecnologia
@@ -127,22 +124,131 @@
               idosos e hoje trabalho com implantação de diversos sistemas.
             </p>
 
-            <p>Logo abaixo você pode conferir minhas mídias sociais, projetos desenvolvidos, habilidades em que possuo
+            <p>Logo abaixo você pode baixar meu currículo e conferir meus projetos desenvolvidos, habilidades em que
+              possuo
               sólidos conhecimentos e também tecnologias que estou aprimodando meus conhecimentos para estar sempre em
-              evolução!
+              evolução.
             </p>
             <div class="btn-social">
-              <a href="https://github.com/phqnr" class="github" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/phqnrz/" class="linkedin" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
+              <a href="assets/cv.pdf" download="Currículo Paulo Henrique Santos de Sousa.pdf" class="icon"
+                title="Baixar currículo"><button><i class="bi bi-person-vcard-fill"></i></button></a>
+
+              <a href="https://github.com/phqnr" class="icon" target="_blank"
+                title="https://github.com/phqnr"><button><i class="bi bi-github"></i></button></a>
+              <a href="https://www.linkedin.com/in/phqnrz/" class="icon" target="_blank"
+                title="https://www.linkedin.com/in/phqnrz/"><button><i class="bi bi-linkedin"></i></button></a>
             </div> <!-- btn-social -->
           </div> <!-- sobre-mim -->
         </div> <!-- flex -->
       </div> <!-- interface -->
     </section> <!-- sobre -->
 
+    <section class="habilidades" id="habilidades">
+      <div class="interface container">
+        <div class="flex">
+          <div class="fortes">
+            <h2 class="titulo efeito-habilidades">Habilidades</h2>
+            <div class="skills">
+              <p title="HTML5">
+                <i class="devicon-html5-plain colored html"></i>
+                <small>HTML5</small>
+              </p>
+              <p title="CSS3">
+                <i class="devicon-css3-plain colored css"></i>
+                <small>CSS3</small>
+              </p>
+              <p title="Bulma">
+                <i class="devicon-bulma-plain colored bulma"></i>
+                <small>Bulma</small>
+              </p>
+              <p title="Bootstrap">
+                <i class="devicon-bootstrap-plain colored bootstrap"></i>
+                <small>Bootstrap</small>
+              </p>
+              <p title="JavaScript">
+                <i class="devicon-javascript-plain colored javascript"></i>
+                <small>JavaScript</small>
+              </p>
+            </div> <!-- skills-->
+          </div> <!-- fortes -->
 
+          <div class="desenvolvimento">
+            <h3 class="titulo efeito-habilidades">Em desenvolvimento</h3>
+            <div class="skills">
+              <p title="Typescript">
+                <i class="devicon-typescript-plain colored typescript"></i>
+                <small>Typescript</small>
+              </p>
+              <p title="React">
+                <i class="devicon-react-original colored react"></i>
+                <small>React</small>
+              </p>
+              <p title="Node.js">
+                <i class="devicon-nodejs-plain colored node"></i>
+                <small>Node.js</small>
+              </p>
+              <p title="Java">
+                <i class="devicon-java-plain colored java"></i>
+                <small>Java</small>
+              </p>
+              <p title="MongoDB">
+                <i class="devicon-mongodb-plain colored mongodb"></i>
+                <small>MongoDB</small>
+              </p>
+            </div> <!-- skills -->
+          </div> <!-- desenvolvimento -->
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- habilidades -->
+
+
+    <section class="projetos" id="projetos">
+      <div class="interface">
+        <h2 class="titulo efeito-projetos">Projetos</h2>
+        <div class="flex">
+          <div class="img-port port1" style="background-image: url(images/github.jpeg);">
+            <div class="overlay">Projeto 1</div>
+          </div>
+          <div class="img-port port2" style="background-image: url(images/github.jpeg);">
+            <div class="overlay">Projeto 2</div>
+          </div>
+          <div class="img-port port3" style="background-image: url(images/github.jpeg);">
+            <div class="overlay">Projeto 3</div>
+          </div>
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- portfolio  -->
+
+
+    <section class="contato" id="contato">
+      <div class="interface">
+        <h2 class="titulo efeito-contato">Entre em contato</h2>
+        <!-- <div class="flex"> -->
+        <h3 class="titulo">Gostou do conteúdo? Envie uma mensagem, vamos conversar!</h3>
+        <form action="#">
+          <div class="topo-form">
+            <input type="text" placeholder="Nome completo" class="nome" required>
+            <!-- <input type="text" placeholder="Sobrenome" required class="sobrenome"> -->
+            <input type="email" placeholder="Email" required class="email">
+            <input type="tel" placeholder="Telefone" class="telefone">
+          </div>
+          <textarea placeholder="Mensagem" class="mensagem" required></textarea>
+          <div class="btn-enviar btn-form">
+            <input type="submit" value="ENVIAR">
+          </div>
+        </form>
+        <!-- </div> flex -->
+      </div> <!-- interface -->
+    </section> <!-- contato -->
   </main>
+
+  <footer>
+    <div class="interface container">
+      <div class="footer-border">
+        <p>&copy; 2024 <a href="https://github.com/phqnr">Paulo Henrique</a></p>
+      </div> <!-- line-footer -->
+    </div> <!-- interface -->
+  </footer> <!-- footer -->
 
 
 </body>

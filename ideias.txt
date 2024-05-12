@@ -1,0 +1,17 @@
+Ideias diversas: 
+
+1. Dimensionar o site a partir do tamanho da tela do dispositivo; 
+  if width > 1775px : add(main class="container);
+
+2. Adicionar uma transição mais suave dentro da página;
+
+3. Verificar acessibilidade; 
+
+4. Corrigir nav header tema escuro;
+
+5. Ajustar a seção de Projetos: 
+   5.1 Colocar a imagem mais na horizontal;
+   5.2 Inserir breve descrição e tecnologias utilizadas;
+   5.3 Links para o deploy e código no Github;
+
+6. 

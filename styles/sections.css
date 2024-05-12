@@ -1,3 +1,5 @@
+@import url(general.css);
+
 /* estilo header +  nav */
 header {
   width: 100%;
@@ -119,7 +121,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 {
-  font-size: 3.25rem;
+  font-size: 4rem;
   line-height: 3.25rem;
   margin-bottom: 1.5rem;
 }
@@ -134,18 +136,261 @@ section.sobre .flex {
   font-weight: 400;
   line-height: 1.75rem;
   text-align: justify;
-
   margin-bottom: 1rem;
 }
 
-.btn-social a {
-  font-size: 1.75rem;
-  cursor: pointer;
+.btn-social a button {
+  border: none;
+  background-color: #ffffff00;
   color: var(--medium-blue);
-  padding-right: 0.75rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline;
+  padding-right: 2rem;
+  transition: .5s;
 }
 
-.btn-social a:hover {
-  transform: scale(1.20);
+.btn-social a button:hover {
+  transform: scale(1.2);
+}
+
+.btn-social a button:focus {
+  outline: none;
+}
+
+
+
+/* estilo main > habilidades  */
+section.habilidades {
+  padding: 12rem 12%;
+}
+
+section.habilidades .flex {
+  flex-direction: column;
+}
+
+section.habilidades .titulo {
+  font-weight: 500;
+  color: var(--medium-blue);
+  text-align: center;
+}
+
+section.habilidades h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+section.habilidades h3 {
+  border-top: 1px solid var(--medium-blue);
+  padding-top: 3rem;
+  font-size: 2rem;
+  margin: 6rem 0 3rem 0;
+}
+
+.skills {
+  gap: 3.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills i {
+  font-size: 5em;
+}
+
+.skills p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills p:hover {
+  transition: .4s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+small {
+  color: var(--medium-blue);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+
+/* estilo main > projetos */
+section.projetos {
+  padding: 12rem 12%;
+}
+
+section.projetos .flex {
+  justify-content: center;
+  gap: 8.5rem;
+}
+
+section.projetos .titulo {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4.5rem;
+  font-weight: 500;
+  color: var(--medium-blue);
+  text-align: center;
+}
+
+.img-port {
+  width: 50rem;
+  height: 20rem;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 3s;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000077;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 5px var(--medium-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: 500;
+  color: #3a5361;
+
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+  transition: .5s;
+}
+
+
+
+/* estiio main > contato */
+section.contato {
+  padding: 12rem 12%;
+}
+
+section.contato .titulo {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: var(--medium-blue);
+}
+
+section.contato h2 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+section.contato h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+form {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* gap: 3rem; */
+}
+
+.topo-form input,
+textarea {
+  background-color: var(--bg-color);
+  width: 30rem;
+  border: none;
+  border-bottom: 1px solid #3a5361;
+  display: flex;
+  padding: 2.25rem 0 0.3rem 0.1rem;
+}
+
+.topo-form input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 3px solid var(--medium-blue);
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: var(--medium-blue);
+  font-size: 14px;
+}
+
+form textarea {
+  resize: none;
+  height: 8rem;
+}
+
+form .btn-enviar {
+  margin-top: 1.75rem;
+  text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+  width: 8rem;
+  padding: 0.5rem;
+  background-color: #50727b00;
+  color: var(--medium-blue);
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
   transition: 1s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+  border-radius: 30px;
+  background-color: var(--medium-blue);
+  color: var(--bg-color);
+  box-shadow: 1px 1px 8px var(--dark-blue);
+  transform: scale(1.0);
+}
+
+
+
+/* estilo main > footer */
+footer {
+  padding: 2rem 4%;
+  /* text-align: center; */
+  background-color: var(--medium-blue);
+  box-shadow: 2px 2px 40px 5px var(--medium-blue);
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer.footer-border {
+  padding-top: 2rem;
+  border: none;
+  border-top: 1px solid var(--bg-color);
+}
+
+footer p,
+footer p a {
+  text-align: center;
+  color: var(--bg-color);
+  text-decoration: none;
+  padding-top: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
 }
